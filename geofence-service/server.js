@@ -14,7 +14,7 @@ app.use(bearerToken()); // To find the "Bearer <token>" in the Authorization hea
 // --- 4. Configuration & "Database" ---
 
 // !! CRITICAL !! This MUST be the exact same secret as your User Service.
-const JWT_SECRET = 'REPLACE_THIS_WITH_A_REAL_SECRET_KEY';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // In-memory "database" for geofences
 // Each geofence object will have an 'id', 'name', 'center', 'radius', and 'userId'

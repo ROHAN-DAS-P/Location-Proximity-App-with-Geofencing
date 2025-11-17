@@ -18,7 +18,7 @@ const users = [];
 
 // This is our "secret key" for signing JWTs.
 // In a real app, this MUST be stored securely in an environment variable.
-const JWT_SECRET = 'REPLACE_THIS_WITH_A_REAL_SECRET_KEY';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // --- 5. Define API Endpoints (Routes) ---
 
